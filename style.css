@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+body {
+    margin: 0;
+    font-family: 'Newsreader', serif;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+p {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+header {
+    background-color: orangered;
+    padding: 20px 50px;
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: white;
+}
+
+header a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer {
+    padding: 20px 50px;
+    margin-top: 100px;
+    background-color: #192D35;
+    color: white;
+}
+
+footer a {
+    color: white;
+    margin: 0px 20px;
+}
+
+footer a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer .legal-links {
+    margin-top: 20px;
+}
+
+.shopping-item {
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.shopping-item::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    content: '+';
+    font-size: 32px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopping-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: black;
+}
+
+.shopping-item:hover::after {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.quicklinks {
+    background-color: white;
+    padding: 20px 50px;
+    overflow: auto;
+}
+
+.quicklinks a {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 500;
+    margin-right: 32px;
+}
+
+.quicklinks a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.button {
+    color: orangered;
+    background-color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.2);
+    border: unset
+}
+
+.button:hover {
+    background-color: rgb(226, 223, 223);
+}
+
+.article {
+    background-color: white;
+}
+
+.article-regular {
+    border-top: 1px dotted rgba(0, 0, 0, 0.1);
+    min-height: 10px;
+    margin-top: 0 !important;
+}
+
+.article img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.card p {
+    margin-top: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+form button {
+    margin-left: 0 !important;
+}
+
+.login {
+    margin-top: 50px;
+}
+
+input {
+    margin-bottom: 20px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0px 10px;
+}
+
+.shoppingCart {
+    background-color: white;
+    padding: 20px;
+    min-height: 30vh;
+    position: fixed;
+    right: 0px;
+    top: 128px;
+    height: calc(100vh - 168px);
+    width: 20%;
+    box-shadow: -3px 16px 11px rgb(0 0 0 / 10%);
+}
+
+.blurred {
+    filter: blur(3px);
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.card-content {
+    text-align: center;
+    padding: 32px 16px;
+    flex: 1;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 32px 16px;
+    display: flex;
+}
+
+.button-orange {
+    background-color: orangered;
+    color: white;
+    margin: 0px 16px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-orange:hover {
+    background-color: rgb(247, 109, 59);
+}
+
+.button-orange[disabled] {
+    background-color: rgba(161, 155, 153, 0.657);
+}
+
+.pretitle {
+    color: orangered;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+.shopping-button-mobile {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .article {
+        width: 70%;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    h2,
+    .pretitle,
+    .read-more,
+    form,
+    p {
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        font-size: 24px;
+        padding: 20px 20px;
+    }
+    .quicklinks {
+        padding: 20px 20px;
+    }
+    h2,
+    .pretitle,
+    .read-more,
+    form,
+    p {
+        padding: 0px 20px;
+    }
+    .card {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    .shopping-button-mobile {
+        display: flex !important;
+        position: fixed;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        margin-left: 0;
+        margin-right: 0;
+        height: 80px;
+        bottom: 0;
+    }
+}
