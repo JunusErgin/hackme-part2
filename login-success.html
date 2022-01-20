@@ -8,23 +8,35 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
 </head>
 
 <body>
 
     <div w3-include-html="templates/header.html"></div>
-    <div class="card" style="padding-top: 100px;">
-        <h2>Herzlichen Glückwunsch!</h2>
+    <div class="center">
+        <div class="card" style="margin-top:100px; padding-top: 100px;">
+            <h2>Herzlichen Glückwunsch!</h2>
 
-        <p>Du hast dich erfolgreich eingeloggt! Du kannst jetzt mit der nächsten Übung fortfahren.</p>
+            <p>Du hast dich erfolgreich eingeloggt! Du kannst jetzt mit der nächsten Übung fortfahren.</p>
 
-        <p>
-            <a class="button button-orange" href="./login2.html">Weiter</a>
-        </p>
+            <p>
+                <a class="button button-orange" href="./login2.html">Weiter</a>
+            </p>
+        </div>
     </div>
 
     <div w3-include-html="templates/footer.html"></div>
 
+    <script>
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: {
+                y: 0.6
+            }
+        });
+    </script>
 </body>
 
 </html>
