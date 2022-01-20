@@ -46,7 +46,7 @@ function emailDictionaryAttack(i, j) {
 }
 
 let alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-let indices = [0];
+
 
 function bruteForceAttack(length) {
     let combinations = [];
@@ -58,9 +58,6 @@ function bruteForceAttack(length) {
     console.log(combinations);
 
     tryCombinations(combinations)
-        // index++;
-
-    // setTimeout(bruteForceAttack, 500);
 }
 
 function tryCombinations(combinations) {
